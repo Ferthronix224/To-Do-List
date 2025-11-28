@@ -44,10 +44,12 @@ function ToDoList(){
     return(
         <div className="to-do-list">
             <h1>To-Do-List</h1>
-            <div>
+            <div className="task-input">
                 <input type="text" placeholder="Enter a task..." value={newTask} onChange={HandleInputChange} />
-                <button className="add-button" onClick={AddTask}>Add</button>
-                <button className="delete-button" onClick={DeleteAllTasks}>Delete All</button>
+                <div>
+                    <button className="add-button" onClick={AddTask}>Add</button>
+                    <button className="delete-button" onClick={DeleteAllTasks}>Delete All</button>
+                </div>                
             </div>
 
             <ol>
